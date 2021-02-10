@@ -3,19 +3,22 @@ const db = require('../models');
 module.exports = function (app) {
     app.get('/api/workouts', (req,res) => {
         db.Workout.find({})
-        .then(workouts => {
-            res.json(workouts);
+        .then(workout => {
+            res.json(workout);
         })
         .catch(err => {
             res.json(err);
         });
     });
 
-    app.post('/api/workouts', (req,res) => {
-        db.Workout.create({type: 'workout'})
-        .catch(err => {
-            res.json(err);
-        });
+    app.post('/api/workouts', async (req,res) => {
+        try{
+            const response = await db.Workout.create({type: "workout"})
+            res.json(response);
+        }
+        catch(err){
+            console.log("Error occurred while creating a workout: ", err)
+        }
     });
 
     app.put('/api/workouts/:id', ({body, params}, res) => {
