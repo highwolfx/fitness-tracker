@@ -23,13 +23,13 @@ Download, clone, or fork the repo and run an `npm install` command in the folder
 
 To start the application, run `npm start` on the command line.
 
-Alternatively, visit the online version deployed on Heroku [here](https://workout-fitness-app-1.herokuapp.com/).
+Alternatively, visit the online version deployed on Heroku [here](https://workout-fitness-app-1.herokuapp.com/). `NOTE: THE HEROKU VERSION IS NOT CURRENTLY WORKING.`
 
 
 
 ## Usage
 
-To start the application, run `npm start` on the command line or [visit the deployed version on Heroku](https://workout-fitness-app-1.herokuapp.com/).
+To start the application, run `npm start` on the command line or [visit the deployed version on Heroku](https://workout-fitness-app-1.herokuapp.com/). `NOTE: THE HEROKU VERSION IS NOT CURRENTLY WORKING.`
 
 <p align="center">
     <img alt="Main landing page" src="https://raw.githubusercontent.com/highwolfx/fitness-tracker/main/public/assets/main.jpg">
